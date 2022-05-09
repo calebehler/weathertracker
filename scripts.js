@@ -1,6 +1,6 @@
 var request = new XMLHttpRequest()
 
-request.open('GET', 'http://api.weatherapi.com/v1//current.json', true)
+request.open('GET', 'http://api.weatherapi.com/v1//current.json?key=<fda88d0772da44f08d0124849220905>&q=Halifax', true)
 
 request.onload = function(){
   
