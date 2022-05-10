@@ -1,6 +1,12 @@
-#mainTitle{
+h1{
+    width:50%;
     font-size: 2em;
     padding: 10px;
-    border-spacing: 10px;
-    border: cornflowerblue;
+    background-color: cornflowerblue;
+}
+#mainBody{
+    background-color: azure;
+}
+#updateButton{
+    padding: 5px;
 }
