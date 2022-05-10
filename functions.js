@@ -5,6 +5,9 @@ function updateData() {
         var data = JSON.parse(this.response)
 
         console.log(data)
+
+
+
     }
 //send request
     request.send()

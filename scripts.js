@@ -6,11 +6,15 @@ request.onload = function () {
     var data = JSON.parse(this.response)
 
     console.log(data)
+
+    var content = document.querySelector('.container');
+
+    content.innerHTML=data.location.name
+
   }
 //send request
   request.send()
 
-data.forEach(current)
 
 
 
