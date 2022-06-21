@@ -12,3 +12,14 @@ function updateData() {
 //send request
     request.send()
 }
+
+function validateForm() {
+    let cityName = document.forms["cityForm"]["chosenCity"].value;
+    if (cityName == "") {
+        alert("City must be specified");
+        return false;
+    }
+    else {
+
+    }
+}

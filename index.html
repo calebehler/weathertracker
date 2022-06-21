@@ -20,11 +20,22 @@
         Live Weather Data
     </h1>
 
-    <!-- placeholder refresh button !-->
-        <button type="button" onclick="updateData()" id="updateButton">Update Data</button>
-    
-    <div>
 
+    <h2>
+        Please select a city:
+    </h2>
+    <div>
+        <!-- placeholder refresh button !-->
+        <button type="button" onclick="updateData()" id="updateButton">Update Data</button>
+
+    </div>
+
+    <div>
+        <form name="cityForm" onsubmit="return validateForm()">
+            <label for="chosenCity">City Name</label>
+            <input type="text" id="chosenCity" required>
+            <input type="submit" value="Submit">
+        </form>
     </div>
 
 

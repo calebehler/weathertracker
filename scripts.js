@@ -1,7 +1,11 @@
 var request = new XMLHttpRequest()
 var dictionary = []
 
-request.open('GET', 'http://api.weatherapi.com/v1/current.json?key=fda88d0772da44f08d0124849220905&q=London&aqi=no', true)
+//concat api call to allow different cities
+var cityName = document.getElementById("chosenCity")
+var cityCall = ("http://api.weatherapi.com/v1/current.json?key=fda88d0772da44f08d0124849220905&q="+cityName+"&aqi=no")
+
+request.open('GET', cityCall, true)
 request.onload = function () {
   //access JSON data here
     var data = JSON.parse(this.response)
