@@ -1,4 +1,8 @@
+//fix later
 function updateData() {
+    validateForm();
+    var request = new XMLHttpRequest()
+    var dictionary = []
     request.open('GET', cityCall, true)
     request.onload = function () {
         //access JSON data here
@@ -14,12 +18,17 @@ function updateData() {
 }
 
 function validateForm() {
-    let cityName = document.forms["cityForm"]["chosenCity"].value;
+    let cityName = document.forms["cityForm"]["chosenCity"].valueAsString;
     if (cityName == "") {
         alert("City must be specified");
         return false;
     }
-    else {
+    else return true;
+}
 
-    }
+function getCityName() {
+
+    let cityName = document.forms["cityForm"]["chosenCity"].valueAsString
+    return cityName;
+
 }
