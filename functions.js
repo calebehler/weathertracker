@@ -10,8 +10,6 @@ function updateData() {
 
         console.log(data)
 
-
-
     }
 //send request
     request.send()
